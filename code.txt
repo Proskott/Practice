@@ -1,0 +1,36 @@
+using System;
+
+namespace ConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Введення прізвища, імені та по батькові
+            Console.WriteLine("Введіть прізвище:");
+            string surname = Console.ReadLine().Trim(); // Видалення зайвих пробілів з початку та кінця рядка
+            Console.WriteLine("Введіть ім'я:");
+            string name = Console.ReadLine().Trim(); // Видалення зайвих пробілів з початку та кінця рядка
+            Console.WriteLine("Введіть по батькові:");
+            string patronymic = Console.ReadLine().Trim(); // Видалення зайвих пробілів з початку та кінця рядка
+
+            // Визначення довжини введених рядків
+            int surnameLength = surname.Length;
+            int nameLength = name.Length;
+            int patronymicLength = patronymic.Length;
+
+            // Виведення довжини введених рядків
+            Console.WriteLine($"Довжина прізвища: {surnameLength}");
+            Console.WriteLine($"Довжина імені: {nameLength}");
+            Console.WriteLine($"Довжина по батькові: {patronymicLength}");
+
+            // Виведення ім'я та кількість літер прізвища, імені та по батькові
+            Console.WriteLine($"Прізвище: {surname}, Кількість літер: {surnameLength}");
+            Console.WriteLine($"Ім'я: {name}, Кількість літер: {nameLength}");
+            Console.WriteLine($"По батькові: {patronymic}, Кількість літер: {patronymicLength}");
+
+            // Виведення результату виконання програми та інформації про студента
+            Console.WriteLine("Програма виконана студентом групи Ходаківський Ігор іпз 22009б спеціальності іпз");
+        }
+    }
+}
